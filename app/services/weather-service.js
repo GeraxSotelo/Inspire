@@ -11,6 +11,8 @@ class WeatherService {
   async getWeatherAsync() {
     try {
       let res = await weatherApi.get();
+      console.log(res);
+
       store.commit("weather", new Weather(res.data));
     } catch (err) {
       console.log(err);
