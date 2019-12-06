@@ -1,3 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
 #todo-error{
   color: red;
   font-size: 2em;

@@ -1,5 +1,15 @@
 import ImageService from "../services/image-service.js";
+import store from "../store.js";
 
-//TODO Create methods for constructor, and rendering the image to the page
-//      (you may wish to set it as a background image)
-export default class ImageController {}
+function _drawBgImage() {
+  let body = document.getElementById("bg-image")
+  body.style.background = `#333 url(${store.State.bgImage}) no-repeat center`
+  body.style.backgroundSize = "cover"
+}
+
+export default class ImageController {
+  constructor() {
+    store.subscribe("bgImage", _drawBgImage)
+    ImageService.getBgImageAsync()
+  }
+}
