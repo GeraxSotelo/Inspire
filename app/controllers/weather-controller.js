@@ -11,6 +11,6 @@ function drawWeather() {
 export default class WeatherController {
   constructor() {
     store.subscribe("weather", drawWeather);
-    WeatherService.getWeather();
+    WeatherService.getWeatherAsync();
   }
 }

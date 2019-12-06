@@ -16,7 +16,6 @@ class ImageService {
     } catch (err) {
       console.log(err);
     }
-
   }
 }
 

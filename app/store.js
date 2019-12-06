@@ -1,11 +1,11 @@
 import Weather from "./models/weather.js";
 
 let _state = {
+  bgImage: "",
   /**@type {Weather} */
-  weather: new Weather({ name: "loading", main: { temp: 0.0 } }), //temporary fake data
+  weather: {},
   /**@type {any[]}*/
-  todos: [], //TODO change 'any' to your todo model
-  bgImage: ""
+  todos: [] //TODO change 'any' to your todo model
 };
 
 /** Collection of listeners to be called based on keyed state changes

@@ -6,13 +6,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Inspire</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="bg-image">
-	<div id="weather">
-		Your Weather Template
-	</div>
+	<header class="container-fluid">
+		<div class="row justify-content-end">
+			<div class="col-12 col-md-3">
+				<div id="weather" class="text-right text-white">
+					<h1>50°F</h1>
+					<h3>Boise</h3>
+				</div>
+			</div>
+		</div>
+	</header>
+
 
 	<div id="quote">
 		The Quote
@@ -26,6 +36,7 @@
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
 	<script type="module" src="app/main.js"></script>
 </body>
 
