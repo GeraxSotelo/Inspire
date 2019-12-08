@@ -10,12 +10,11 @@ export default class TodoController {
     TodoService.getTodos();
   }
 
-  async addTodo() {
+  async addTodo(event) {
     event.preventDefault()
     let form = event.target;
-    console.log(form.todo.value);
-    //TODO build the todo object from the data that comes into this method
     var todo = {
+      description: form.todo.value
     };
     try {
       await TodoService.addTodoAsync(todo);
@@ -23,6 +22,7 @@ export default class TodoController {
       debugger;
       console.error("[ERROR]:", error);
     }
+    form.reset()
   }
 
   //NOTE This method will pass an Id to your service for the TODO that will need to be toggled

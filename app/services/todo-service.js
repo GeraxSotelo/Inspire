@@ -1,4 +1,5 @@
 import store from "../store.js";
+import Todo from "../models/todo.js";
 
 // @ts-ignore
 const todoApi = axios.create({
@@ -15,7 +16,9 @@ class TodoService {
 
   async addTodoAsync(todo) {
     let res = await todoApi.post("", todo);
-    //TODO Handle this response from the server (hint: what data comes back, do you want this?)
+    console.log(res);
+    let results = new Todo(res.data.data)
+    store.commit("todos", results)
   }
 
   async toggleTodoStatusAsync(todoId) {
