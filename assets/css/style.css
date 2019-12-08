@@ -47,8 +47,9 @@ main {
   outline: none;
 }
 
-.fa-plus {
-  cursor: pointer;
+.add-todo-btn {
+  background: none;
+  border: none;
 }
 
 #todo-error{
