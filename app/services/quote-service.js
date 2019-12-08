@@ -18,12 +18,14 @@ class QuoteService {
   }
 
   showAuthor() {
-    document.querySelector("#quote").classList.add("translate")
+    document.querySelector("#quote").classList.add("translate-up")
+    document.querySelector("#quote").classList.remove("translate-down")
     document.querySelector(".author").classList.add("visible")
   }
 
   hideAuthor() {
-    document.querySelector("#quote").classList.remove("translate")
+    document.querySelector("#quote").classList.add("translate-down")
+    document.querySelector("#quote").classList.remove("translate-up")
     document.querySelector(".author").classList.remove("visible")
   }
 }
