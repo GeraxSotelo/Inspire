@@ -22,12 +22,33 @@
 		</div>
 	</header>
 
-	<main class="container-fluid"></main>
+	<main class="container-fluid">
+
+		<div class="row">
+			<div class="col-12">
+				<!-- clock? -->
+			</div>
+		</div>
+
+		<div>
+			<div id="todo-error"></div>
+			<div class="todo-list-container d-flex align-items-end">
+				<form onsubmit="app.todoController.addTodo(todo)">
+					<div id="todos">
+						<!-- template -->
+					</div>
+					<input class="todo-input text-white" type="text" name="todo" placeholder="New Todo">
+					<i type="submit" class="fas fa-plus"></i>
+				</form>
+			</div>
+		</div>
+
+	</main>
 
 	<footer class="container-fluid">
 		<div class="row">
-			<div class="col-12">
-				<div id="quote" class="text-center pt-2 pb-2" onmouseenter="app.quoteController.showAuthor()"
+			<div class="col-12 col-md-10 col-lg-8 mx-auto">
+				<div id="quote" class="text-center text-white pt-2 pb-2" onmouseenter="app.quoteController.showAuthor()"
 					onmouseleave="app.quoteController.hideAuthor()">
 					<!-- quote template -->
 				</div>
@@ -35,12 +56,6 @@
 		</div>
 	</footer>
 
-	<div>
-		A Todo List
-		<div id="todo-error"></div>
-		<form onsubmit=""></form>
-		<div id="todos"></div>
-	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
