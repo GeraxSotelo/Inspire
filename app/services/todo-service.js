@@ -9,13 +9,8 @@ const todoApi = axios.create({
 
 class TodoService {
   async getTodos() {
-    console.log("Getting the Todo List");
     let res = await todoApi.get();
-    console.log("get todos res ", res);
-
     let results = res.data.data.map(t => new Todo(t))
-    console.log("get todos results ", results);
-
     store.commit("todos", results)
   }
 
@@ -35,9 +30,9 @@ class TodoService {
   }
 
   async removeTodoAsync(todoId) {
-    //TODO Work through this one on your own
-    //		what is the request type
-    //		once the response comes back, what do you need to insure happens?
+    let todo = store.State.todos.find(t => t._id == todoId)
+    let res = await todoApi.delete(todo._id)
+    this.getTodos()
   }
 }
 
