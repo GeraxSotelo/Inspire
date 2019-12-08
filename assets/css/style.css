@@ -52,6 +52,17 @@ main {
   border: none;
 }
 
+.todo-container {
+  position: relative;
+}
+
+.todo-delete-btn {
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(30%);
+  right: 3%;
+}
+
 #todo-error{
   color: red;
   font-size: 2em;
