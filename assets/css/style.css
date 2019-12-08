@@ -6,6 +6,19 @@ main {
   min-height: 50vh;
 }
 
+.translate {
+  transform: translateY(-40%);
+  transition: transform .2s ease-in-out;
+}
+
+.author {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
 #todo-error{
   color: red;
   font-size: 2em;

@@ -1,3 +1,6 @@
+import store from "../store.js";
+import Quote from "../models/quote.js";
+
 // @ts-ignore
 const _quoteApi = axios.create({
   baseURL: "//bcw-sandbox.herokuapp.com/api/quotes",
@@ -8,11 +11,20 @@ class QuoteService {
   async getQuoteAsync() {
     try {
       let res = await _quoteApi.get()
-      console.log(res.data.quote.body);
-
+      store.commit("quote", new Quote(res.data.quote))
     } catch (err) {
       console.log(err)
     }
+  }
+
+  showAuthor() {
+    document.querySelector("#quote").classList.add("translate")
+    document.querySelector(".author").classList.add("visible")
+  }
+
+  hideAuthor() {
+    document.querySelector("#quote").classList.remove("translate")
+    document.querySelector(".author").classList.remove("visible")
   }
 }
 

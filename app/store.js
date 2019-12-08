@@ -2,9 +2,8 @@ import Weather from "./models/weather.js";
 
 let _state = {
   bgImage: "",
-  /**@type {Weather} */
   weather: {},
-  quote: [],
+  quote: {},
   /**@type {any[]}*/
   todos: [] //TODO change 'any' to your todo model
 };
