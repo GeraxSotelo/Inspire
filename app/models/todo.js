@@ -9,7 +9,7 @@ export default class Todo {
   get Template() {
     return `
       <div class="todo-container pt-1 pb-1">
-        <i class="todo-delete-btn fas fa-times"></i>
+        <i class="todo-delete-btn fas fa-times" onclick="app.todoController.removeTodo('${this.id}')"></i>
         <input type="checkbox">
         <p class="d-inline-block mb-0">${this.description}</p>
       </div>
