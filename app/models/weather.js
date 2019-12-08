@@ -2,6 +2,7 @@ export default class Weather {
   constructor(data) {
     this.city = data.name
     this.tempInF = Math.round((data.main.temp - 273.15) * 9 / 5 + 32)
+    this.tempInC = Math.round(data.main.temp - 273.15)
     this.icon = data.weather[0].icon
     this.description = data.weather[0].description
   }

@@ -4,6 +4,7 @@ let _state = {
   bgImage: "",
   /**@type {Weather} */
   weather: {},
+  quote: [],
   /**@type {any[]}*/
   todos: [] //TODO change 'any' to your todo model
 };
@@ -13,6 +14,7 @@ let _state = {
  */
 let _listeners = {
   weather: [],
+  quote: [],
   bgImage: []
 };
 
