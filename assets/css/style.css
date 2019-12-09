@@ -7,8 +7,26 @@ main {
   position: relative;
 }
 
+.clock-container {
+  border: 1px solid white;
+  padding: 3em;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#time {
+ font-size: 4em;
+}
+
+#greeting {
+  font-size: 3em;
+}
+
+/***** QUOTE *****/
 .translate-up {
-  transform: translateY(-40%);
+  transform: translateY(-35%);
   transition: transform .2s ease-in-out;
 }
 
@@ -26,6 +44,7 @@ main {
   transition-delay: 0.15s;
 }
 
+/***** TODOS *****/
 .todo-list-container {
   background-color: rgba(34, 34, 34, 0.80);
   color: white;

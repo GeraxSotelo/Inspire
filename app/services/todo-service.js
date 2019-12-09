@@ -15,8 +15,10 @@ class TodoService {
   }
 
   async addTodoAsync(todo) {
-    let res = await todoApi.post("", todo);
-    this.getTodos()
+    if (todo.description != "") {
+      let res = await todoApi.post("", todo);
+      this.getTodos()
+    }
   }
 
   async toggleTodoStatusAsync(todoId) {
