@@ -18,4 +18,8 @@ export default class QuoteController {
   hideAuthor() {
     QuoteService.hideAuthor()
   }
+
+  nextQuote() {
+    QuoteService.getQuoteAsync()
+  }
 }
