@@ -63,6 +63,10 @@ main {
   right: 3%;
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
 #todo-error{
   color: red;
   font-size: 2em;

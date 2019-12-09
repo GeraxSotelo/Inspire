@@ -21,12 +21,13 @@ class TodoService {
 
   async toggleTodoStatusAsync(todoId) {
     let todo = store.State.todos.find(todo => todo._id == todoId);
-    //TODO Make sure that you found a todo,
-    //		and if you did find one
-    //		change its completed status to whatever it is not (ex: false => true or true => false)
-
+    if (todo.completed == false) {
+      todo.completed = true
+    } else {
+      todo.completed = false
+    }
     let res = await todoApi.put(todoId, todo);
-    //TODO do you care about this data? or should you go get something else?
+    this.getTodos()
   }
 
   async removeTodoAsync(todoId) {

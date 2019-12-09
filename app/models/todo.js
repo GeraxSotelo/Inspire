@@ -10,9 +10,25 @@ export default class Todo {
     return `
       <div class="todo-container pt-1 pb-1">
         <i class="todo-delete-btn fas fa-times" onclick="app.todoController.removeTodo('${this._id}')"></i>
-        <input type="checkbox">
-        <p class="d-inline-block mb-0">${this.description}</p>
+        <input type="checkbox" onclick="app.todoController.toggleTodoStatus('${this._id}')"  ${this.toggleCheck()}>
+        <p class="d-inline-block mb-0 ${this.toggleLineThrough()}">${this.description}</p>
       </div>
     `
+  }
+
+  toggleLineThrough() {
+    if (this.completed == true) {
+      return "completed"
+    } else {
+      return ""
+    }
+  }
+
+  toggleCheck() {
+    if (this.completed == true) {
+      return "checked"
+    } else {
+      return ""
+    }
   }
 }
