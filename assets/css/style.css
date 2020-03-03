@@ -8,14 +8,15 @@ main {
 }
 
 .clock-container {
-  border: 1px solid white;
+  border: 2px solid white;
   padding: 3em;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
 }
-
+.clock-border {
+  outline: 4px solid #777;
+  outline-offset: -54px;
+  border: 44px solid transparent;
+  border-width: 15px 10px 85px 85px;
+}
 #time {
  font-size: 4em;
 }
