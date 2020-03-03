@@ -6,7 +6,7 @@ export default class Quote {
   get Template() {
     return `
         <h4>${this.quote}</h4>
-        <h5 class="author"><b>-${this.author}-</b></h5>
+        <h5 class="author">-${this.author}-</h5>
         <i id="next-quote-btn" class="fas fa-chevron-circle-right pl-2" title="Next Quote" onclick="app.quoteController.nextQuote()"></i>
       `
   }

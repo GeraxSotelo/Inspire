@@ -2,7 +2,7 @@ import store from "../store.js";
 
 // @ts-ignore
 const imgApi = axios.create({
-  baseURL: "https://pixabay.com/api/?key=1679424-bfa0f7d8060afa93165df72e8&safesearch=true&q=nature&per_page=100&colors='red','green','blue','gray','black','brown'",
+  baseURL: "https://pixabay.com/api/?key=1679424-bfa0f7d8060afa93165df72e8&safesearch=true&q=nature&per_page=100&colors=blue,gray,black",
   timeout: 8000
 });
 
