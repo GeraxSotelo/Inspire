@@ -98,3 +98,34 @@ main {
   color: red;
   font-size: 2em;
 }
+
+@media only screen and (max-width: 576px) {
+  .clock-container {
+    padding: 1em;
+  }
+  .clock-border {
+    outline: 4px solid #777;
+    outline-offset: -52px;
+    border: 44px solid transparent;
+    border-width: 40px 15px 70px 70px;
+  }
+  #greeting {
+    font-size: 2em;
+  }
+  #todos {
+    font-size: 0.85em;
+  }
+  #todo-count {
+    font-size: 0.75em;
+  }
+  .todo-list-container {
+    min-height: 8em;
+    bottom: 4%;
+  }
+  #quote h4 {
+    font-size: 1em;
+  }
+  .author {
+    font-size: 0.75em;
+  }
+}
