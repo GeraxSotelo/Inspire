@@ -100,13 +100,14 @@ main {
 }
 
 @media only screen and (max-width: 576px) {
+  #time {
+    font-size: 3.4em;
+   }
   .clock-container {
     padding: 1em;
   }
   .clock-border {
-    outline: 4px solid #777;
     outline-offset: -52px;
-    border: 44px solid transparent;
     border-width: 40px 15px 70px 70px;
   }
   #greeting {
