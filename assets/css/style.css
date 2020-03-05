@@ -2,6 +2,55 @@ body {
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+#___gcse_0 .gsc-control-cse {
+  border: none;
+  background-color: transparent;
+  padding: 0.1em; 
+
+}
+/* Inside of search bar */
+#gsc-iw-id1 {
+  background-color: transparent;
+  border-radius: 5px;
+  background: 
+    linear-gradient(
+      rgba(121, 121, 121, 0.4), 
+      rgba(121, 121, 121, 0.4)
+    ) !important;
+}
+/* Google logo */
+#gsc-i-id1 {
+  background: url(http://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png) left center no-repeat !important;
+  color: white;
+}
+#gsc-i-id1::placeholder {
+  color: white !important;
+}
+/* Input field */
+#gsc-i-id1:focus {
+  background: transparent !important;
+}
+.gsc-search-button .gsc-search-button-v2 {
+  border-color: #DFE1E5;
+  background-color: transparent;
+  background: 
+    linear-gradient(
+      rgba(121, 121, 121, 0.4), 
+      rgba(121, 121, 121, 0.4)
+    ) !important;
+  padding: 10px 10px;
+  border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+.gsc-search-button-v2:hover, .gsc-search-button-v2:focus {
+    border-color: white !important;
+    background: 
+    linear-gradient(
+      rgba(121, 121, 121, 0.75), 
+      rgba(121, 121, 121, 0.75)
+    ) !important;
+}
 
 main {
   min-height: 70vh;

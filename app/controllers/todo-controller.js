@@ -3,7 +3,7 @@ import store from "../store.js";
 
 function _todoCount(total, completed) {
   let template = ''
-  let todoText = 'To Do'
+  let todoText = 'To-Do'
   if (total > 1) {
     todoText += 's'
   }

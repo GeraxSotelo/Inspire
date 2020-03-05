@@ -23,13 +23,8 @@ class TodoService {
 
   async toggleTodoStatusAsync(todoId) {
     let todo = store.State.todos.find(todo => todo._id == todoId);
-    //STUB todo.completed = !todo.completed
-    if (todo.completed == false) {
-      todo.completed = true
-    } else {
-      todo.completed = false
-    }
-    let res = await todoApi.put(todoId, todo);
+    todo.completed = !todo.completed
+    await todoApi.put(todoId, todo);
     this.getTodos()
   }
 
