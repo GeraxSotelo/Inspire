@@ -12,6 +12,7 @@ class App {
     this.imageController = new ImageController();
     this.quoteController = new QuoteController();
     this.clockController = new ClockController();
+    document.getElementById('gsc-i-id1').setAttribute('placeholder', 'Search');
   }
 }
 

@@ -150,7 +150,7 @@ main {
 
 @media only screen and (max-width: 576px) {
   #time {
-    font-size: 3.4em;
+    font-size: 3em;
    }
   .clock-container {
     padding: 1em;
@@ -160,7 +160,7 @@ main {
     border-width: 40px 15px 70px 70px;
   }
   #greeting {
-    font-size: 2em;
+    font-size: 1.5em;
   }
   #todos {
     font-size: 0.85em;
